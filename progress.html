@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="progress.css">
+	<title>Stock App</title>
+</head>
+<body>
+	<div class="container">
+	  <h1 class="text-center">Loading App&nbsp;&nbsp;&nbsp;</h1>
+	  <div class="progress">
+	    <div class="progress-bar">
+	      <div class="progress-shadow"></div>
+	    </div>
+	  </div>
+	</div>
+	<script>
+
+		var x = document.getElementsByClassName("text-center")[0];
+		setTimeout(function(){x.innerHTML="Loading App.&nbsp;&nbsp;"},300);
+		setTimeout(function(){x.innerHTML="Loading App..&nbsp;"},1000);
+		setTimeout(function(){x.innerHTML="Loading App..."},2000);
+		// console.log("heyya");
+		// console.log(x);
+
+
+		setTimeout(function(){window.location.href='index.html'},4000);
+	</script>
+</body>
+</html>
